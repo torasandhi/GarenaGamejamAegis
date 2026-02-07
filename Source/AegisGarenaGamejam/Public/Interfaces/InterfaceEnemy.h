@@ -24,4 +24,6 @@ class AEGISGARENAGAMEJAM_API IInterfaceEnemy
 public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void IShowing();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void ISetPosition(FVector newPos);
 };
