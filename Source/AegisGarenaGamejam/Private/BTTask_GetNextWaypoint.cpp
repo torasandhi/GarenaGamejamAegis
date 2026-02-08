@@ -42,7 +42,6 @@ EBTNodeResult::Type UBTTask_GetNextWaypoint::ExecuteTask(UBehaviorTreeComponent&
 
 	//  Update Target Actor Key
 	Blackboard->SetValueAsObject(TargetActorKey.SelectedKeyName, Waypoints[CurrentIndex]);
-		SLOGF("SelectedKeyName : %s", *Waypoints[CurrentIndex]->GetFName().ToString());
 
 	//  Calculate and Save Next Index (Looping)
 	int32 NextIndex = (CurrentIndex + 1) % Waypoints.Num();
